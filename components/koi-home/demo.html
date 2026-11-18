@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Koi Home</title>
+<style>
+  html, body { margin: 0; background: #0a0a0b; }
+  xs-koi-home:not(:defined) { visibility: hidden; }
+</style>
+<script type="module" src="./koi-home.js"></script>
+</head>
+<body>
+
+<xs-koi-home name="Zain" name-ar="زين">
+  <a href="#explore" style="--c:#5b8def">Explore</a>
+  <a href="#ask" style="--c:#e8e8ea" aria-current="page">Ask</a>
+  <a href="#jarvis" style="--c:#e5534b">Jarvis</a>
+  <a href="#creativity" style="--c:#3fb27f">Creativity</a>
+  <a href="#blog" style="--c:#e3b341">Blog</a>
+  <a href="#wiki" style="--c:#a371f7">Wiki</a>
+  <a href="#craft" style="--c:#f0883e">Craft</a>
+</xs-koi-home>
+
+<script type="module">
+  // Connect a real backend (remove the comments). Without a listener, the built-in demo replies run.
+  // const koi = document.querySelector('xs-koi-home');
+  // koi.addEventListener('koi:ask', async e => {
+  //   e.preventDefault();
+  //   koi.status('Searching…');
+  //   const res = await fetch('/api/ask', { method: 'POST', body: e.detail });
+  //   koi.reply(await res.text());
+  // });
+</script>
+</body>
+</html>
